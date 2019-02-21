@@ -10,6 +10,7 @@ function arcTween(newAngle, shape) {
     };
   }
 }
+// Rotate arc off dead-center
 var skew = 0.1;
 
 var bigArc = d3.arc()
@@ -25,6 +26,7 @@ var smArc = d3.arc()
 // Build
 var w = 300;
 var h = 250;
+// Mocking data. How to pass this programatically?
 const Data = 80;
 
 var svgContainer = d3.select('#svg-container')
